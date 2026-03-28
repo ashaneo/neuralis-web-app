@@ -11,10 +11,27 @@
   <div class="background"></div>
 
   <main class="hero">
-    <h1>Neuralis Labs</h1>
-    <p class="tagline">Intelligence. Engineered.</p>
-    <a href="mailto:theneuralislabs@gmail.com" class="btn">Coming Soon...</a>
-  </main>
+  <h1>Neuralis Labs</h1>
+  <p class="tagline">
+    <span id="typing"></span>
+  </p>
+  <a href="mailto:theneuralislabs@gmail.com" class="btn">Get in Touch</a>
+</main>
+
+<script>
+  const text = "Intelligence. Engineered.";
+  let i = 0;
+
+  function typeEffect() {
+    if (i < text.length) {
+      document.getElementById("typing").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeEffect, 50);
+    }
+  }
+
+  window.onload = typeEffect;
+</script>
 
   <footer>
     <p>© 2026 Neuralis Labs</p>
