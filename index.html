@@ -1,41 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neuralis Labs</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <div class="background"></div>
-
-  <main class="hero">
-  <h1>Neuralis Labs</h1>
-  <p class="tagline">
-    <span id="typing"></span>
-  </p>
-  <a href="mailto:theneuralislabs@gmail.com" class="btn">Get in Touch</a>
-</main>
-
-<script>
-  const text = "Intelligence. Engineered.";
-  let i = 0;
-
-  function typeEffect() {
-    if (i < text.length) {
-      document.getElementById("typing").innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typeEffect, 50);
-    }
-  }
-
-  window.onload = typeEffect;
-</script>
-
-  <footer>
-    <p>© 2026 Neuralis Labs</p>
-  </footer>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>neuralis-web-app</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
