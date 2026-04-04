@@ -1,16 +1,21 @@
 function Card({ title, description, items, image }) {
   return (
-    <div className="card">
-      <img src={image} alt={title} className="card-img" />
-      <h3>{title}</h3>
-      <p>{description}</p>
+    <article className="card">
+      <div className="card-media">
+        <img src={image} alt={title} className="card-img" />
+      </div>
 
-      <ul>
-        {items.map((item, index) => (
-          <li key={index}>• {item}</li>
-        ))}
-      </ul>
-    </div>
+      <div className="card-content">
+        <h3>{title}</h3>
+        <p>{description}</p>
+
+        <ul>
+          {items.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </div>
+    </article>
   );
 }
 

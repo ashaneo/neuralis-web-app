@@ -1,12 +1,26 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Contact from "./sections/Contact";
+import Capabilities from "./sections/Capabilities";
 import Hero from "./sections/Hero";
+import Process from "./sections/Process";
 import Services from "./sections/Services";
 
 function App() {
   return (
-    <>
-      <Hero />
-      <Services />
-    </>
+    <div className="site-shell">
+      <Header />
+
+      <main>
+        <Hero />
+        <Services />
+        <Capabilities />
+        <Process />
+        <Contact />
+      </main>
+
+      <Footer />
+    </div>
   );
 }
 
