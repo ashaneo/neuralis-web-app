@@ -1,9 +1,9 @@
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "What We Do", href: "#services" },
-  { label: "Capabilities", href: "#capabilities" },
-  { label: "Process", href: "#process" },
-  { label: "Contact", href: "#contact" },
+  // { label: "Capabilities", href: "#capabilities" },
+  { label: "How We Work", href: "#process" },
+  { label: "Contact Us", href: "#contact" },
 ];
 
 function Header() {

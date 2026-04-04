@@ -14,8 +14,8 @@ function App() {
       <main>
         <Hero />
         <Services />
-        <Capabilities />
         <Process />
+        <Capabilities />
         <Contact />
       </main>
 
