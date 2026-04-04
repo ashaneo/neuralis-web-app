@@ -1,8 +1,8 @@
 const navItems = [
   { label: "Home", href: "#home" },
-  { label: "What We Do", href: "#services" },
+  { label: "Services", href: "#services" },
   // { label: "Capabilities", href: "#capabilities" },
-  { label: "How We Work", href: "#process" },
+  { label: "Processes", href: "#process" },
   { label: "Contact Us", href: "#contact" },
 ];
 
