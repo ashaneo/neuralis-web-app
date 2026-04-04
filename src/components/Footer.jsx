@@ -1,8 +1,8 @@
 const footerLinks = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },
-  { label: "Capabilities", href: "#capabilities" },
-  { label: "Process", href: "#process" },
+  { label: "Processes", href: "#process" },
+  { label: "Contact Us", href: "#contact" },
 ];
 
 function Footer() {
