@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },
@@ -7,8 +9,23 @@ const navItems = [
 ];
 
 function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 8);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="site-header">
+    <header className={`site-header ${isScrolled ? "is-scrolled" : ""}`}>
       <div className="container header-inner">
         <a className="brand" href="#home" aria-label="Neuralis home">
           <span className="brand-mark" />
