@@ -1,4 +1,5 @@
 import heroImage from "../assets/hero.png";
+import "../styles/Hero.css";
 
 const quickStats = [
   "AI systems for real products",

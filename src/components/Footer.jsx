@@ -1,3 +1,5 @@
+import "../styles/Footer.css";
+
 const footerLinks = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },

@@ -1,3 +1,5 @@
+import "../styles/SectionIntro.css";
+
 function SectionIntro({ eyebrow, title, description, align = "left" }) {
   return (
     <div className={`section-intro section-intro-${align}`}>

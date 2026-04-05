@@ -1,3 +1,5 @@
+import "../styles/Card.css";
+
 function Card({ title, description, items, image }) {
   return (
     <article className="card">

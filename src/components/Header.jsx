@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../styles/Header.css";
 
 const navItems = [
   { label: "Home", href: "#home" },

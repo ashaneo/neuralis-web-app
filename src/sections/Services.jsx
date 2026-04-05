@@ -1,5 +1,6 @@
 import Card from "../components/Card";
 import SectionIntro from "../components/SectionIntro";
+import "../styles/Services.css";
 
 const services = [
   {

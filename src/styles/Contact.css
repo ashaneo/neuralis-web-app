@@ -1,0 +1,30 @@
+.contact-section {
+  padding-top: 1.5rem;
+}
+
+.contact-panel {
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(17, 28, 45, 0.92), rgba(8, 12, 19, 0.98)),
+    rgba(255, 255, 255, 0.02);
+  box-shadow: var(--shadow);
+}
+
+.contact-copy {
+  max-width: 58ch;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--muted);
+}
+
+.contact-copy a {
+  color: var(--accent-soft);
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.6rem;
+}

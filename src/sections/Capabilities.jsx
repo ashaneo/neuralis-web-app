@@ -1,4 +1,5 @@
 import SectionIntro from "../components/SectionIntro";
+import "../styles/Capabilities.css";
 
 const capabilities = [
   {
